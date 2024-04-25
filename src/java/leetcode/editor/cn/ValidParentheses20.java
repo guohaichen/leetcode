@@ -66,6 +66,7 @@ public class ValidParentheses20 {
                 } else if (c == '[') {
                     stack.push(']');
                 } else {
+                    // !stack.isEmpty() 这里是因为如果测试用例以‘]’右括号开始的话，则出栈的则为null，null与字符作比较，爆出空指针异常
                     if (!stack.isEmpty() && c == stack.peek()) {
                         stack.pop();
                     } else {
