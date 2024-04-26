@@ -11,3 +11,5 @@
 **/out/
 .idea/
 leetcode.iml
+/src/java/leetcode/editor/cn/doc/submission/
+/src/java/leetcode/editor/cn/doc/note/
