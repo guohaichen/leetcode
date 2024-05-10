@@ -68,7 +68,7 @@ public class ValidateBinarySearchTree98 {
             //所以先将中序遍历的模板写下，再对比前节点和后节点的大小， 左 根 右
             LinkedList<TreeNode> stack = new LinkedList<>();
             TreeNode current = root;
-            //定义prev为最小值，因为
+            //定义prev为long最小值，因为int测试用例有个最小int值，
             long prev = Long.MIN_VALUE;
 
             while (current != null || !stack.isEmpty()) {
