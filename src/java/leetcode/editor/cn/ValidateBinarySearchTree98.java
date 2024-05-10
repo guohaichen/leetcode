@@ -66,25 +66,42 @@ public class ValidateBinarySearchTree98 {
         public boolean isValidBST(TreeNode root) {
             //根据二叉搜索树的特性，左节点是小于根小于右节点的，那么根据中序遍历得出，遍历结果一定是一个升序；
             //所以先将中序遍历的模板写下，再对比前节点和后节点的大小， 左 根 右
-            LinkedList<TreeNode> stack = new LinkedList<>();
-            TreeNode current = root;
-            //定义prev为long最小值，因为int测试用例有个最小int值，
-            long prev = Long.MIN_VALUE;
+//            LinkedList<TreeNode> stack = new LinkedList<>();
+//            TreeNode current = root;
+//            //定义prev为long最小值，因为int测试用例有个最小int值，
+//            long prev = Long.MIN_VALUE;
+//
+//            while (current != null || !stack.isEmpty()) {
+//                if (current != null) {
+//                    stack.push(current);
+//                    current = current.left;
+//                } else {
+//                    TreeNode pop = stack.pop();
+//                    if (prev >= pop.val) {
+//                        return false;
+//                    }
+//                    prev = pop.val;
+//                    current = pop.right;
+//                }
+//            }
+//            return true;
+            return validBST(root);
+        }
 
-            while (current != null || !stack.isEmpty()) {
-                if (current != null) {
-                    stack.push(current);
-                    current = current.left;
-                } else {
-                    TreeNode pop = stack.pop();
-                    if (prev>=pop.val){
-                        return false;
-                    }
-                    prev = pop.val;
-                    current = pop.right;
-                }
+        long prev = Long.MIN_VALUE;
+        //递归法
+        public boolean validBST(TreeNode root) {
+            //递归解决
+            if (root == null) {
+                return true;
             }
-            return true;
+            boolean b = validBST(root.left);
+            if (prev >= root.val) {
+                return false;
+            }
+            prev = root.val;
+            boolean a = validBST(root.right);
+            return a && b;
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
