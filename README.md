@@ -23,3 +23,65 @@
 >
 > istore_2
 
+#### 二叉树的一些遍历方式
+1. 层序遍历 也就是广度优先遍历 结合队列
+
+```java
+public List<List<Integer>> levelQuery(TreeNode root) {
+        if (root == null) {
+            return new ArrayList<>();
+        }
+        //存放每层node
+        List<List<Integer>> levelList = new ArrayList<>();
+        //借助队列，先进先出
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.offer(root);
+        while (!queue.isEmpty()) {
+            //存放node
+            ArrayList<Integer> nodeList = new ArrayList<>();
+            int size = queue.size();
+            while (size > 0) {
+                BinaryTree.TreeNode tmpNode = queue.poll();
+                nodeList.add(tmpNode.val);
+                if (tmpNode.leftNode != null) {
+                    queue.offer(tmpNode.leftNode);
+                }
+                if (tmpNode.rightNode != null) {
+                    queue.offer(tmpNode.rightNode);
+                }
+                size--;
+            }
+            levelList.add(nodeList);
+        }
+        return levelList;
+    }
+```
+
+2. 前序遍历，中序遍历，后序遍历 也就是深度优先遍历 结合栈；
+
+```java
+import struct.TreeNode;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+
+public List<Integer> preOrder(TreeNode root) {
+    if (root == null) {
+        return null;
+    }
+    TreeNode current = root;
+    LinkedList<TreeNode> stack = new LinkedList<>();
+    List<Integer> list = new ArrayList<>();
+
+    while (!stack.isEmpty() || current != null) {
+        if (current != null) {
+            stack.push(current);
+            list.add(current.val);
+            current = current.left;
+        } else {
+            TreeNode pop = stack.pop();
+            current = pop.right;
+        }
+    }
+}
+```
