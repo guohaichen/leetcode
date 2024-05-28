@@ -62,14 +62,19 @@ public class Combinations77 {
          * @param result
          */
         private void dfs(int n, int k, int start, LinkedList<Integer> stack, List<List<Integer>> result) {
-            if (stack.size() == k) {
+            if (k == 0) {
                 result.add(new ArrayList<>(stack));
                 return;
             }
-            // i=start 排除已经给出的组喝
+            // i=start 排除已经给出的组合
             for (int i = start; i <= n; i++) {
+                //想一想可不可以进行减枝操作。 n-i+1 代表什么含义；k个数; n-i+1 代表剩余可用数字的个数
+                //剪枝操作，减少不必要的回溯
+                if (k > n - i + 1) {
+                    continue;
+                }
                 stack.push(i);
-                dfs(n, k, i + 1, stack, result);
+                dfs(n, k - 1, i + 1, stack, result);
                 //回溯
                 stack.pop();
             }
