@@ -85,6 +85,17 @@ public List<Integer> preOrder(TreeNode root) {
     }
 }
 ```
+
+
+
+#### 动态规划
+- [不同路径](src/java/leetcode/editor/cn/UniquePaths62.java)
+- [零钱兑换](src/java/leetcode/editor/cn/CoinChange322.java)
+- [零钱兑换2](src/java/leetcode/editor/cn/CoinChangeIi518.java)
+- [打家劫舍](src/java/leetcode/editor/cn/HouseRobber198.java)
+- [打家劫舍2](src/java/leetcode/editor/cn/HouseRobber198.java)
+- [打家劫舍3](src/java/leetcode/editor/cn/HouseRobberIii337.java)
+
 #### 回溯算法
 - [全排列1-力扣46](src/java/leetcode/editor/cn/Permutations46.java)
 - [全排列2-力扣47](src/java/leetcode/editor/cn/PermutationsIi47.java)
@@ -92,3 +103,15 @@ public List<Integer> preOrder(TreeNode root) {
 - [组合总和-力扣39](src/java/leetcode/editor/cn/CombinationSum39.java)
 - [组合总和2-力扣40](src/java/leetcode/editor/cn/CombinationSumIi40.java)
 - [组合总和3-力扣216](src/java/leetcode/editor/cn/CombinationSumIii216.java)
+- [八皇后-力扣51](src/java/leetcode/editor/cn/NQueens51.java)
+
+八皇后问题图解：
+
+![八皇后](./assets/image-20240528170047229.png)
+
+#### 双指针
+- [两数之和](src/java/leetcode/editor/cn/TwoSumIiInputArrayIsSorted167.java)
+- [三数之和](src/java/leetcode/editor/cn/ThreeSum15.java)
+
+#### 单调栈
+- [滑动窗口最大值-力扣239](src/java/leetcode/editor/cn/SlidingWindowMaximum239.java)
