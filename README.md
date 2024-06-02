@@ -90,11 +90,19 @@ public List<Integer> preOrder(TreeNode root) {
 
 #### 动态规划
 - [不同路径](src/java/leetcode/editor/cn/UniquePaths62.java)
+1. 零钱兑换问题
 - [零钱兑换](src/java/leetcode/editor/cn/CoinChange322.java)
 - [零钱兑换2](src/java/leetcode/editor/cn/CoinChangeIi518.java)
+
+2. 打家劫舍问题
 - [打家劫舍](src/java/leetcode/editor/cn/HouseRobber198.java)
 - [打家劫舍2](src/java/leetcode/editor/cn/HouseRobber198.java)
 - [打家劫舍3](src/java/leetcode/editor/cn/HouseRobberIii337.java)
+
+
+3. 股票问题
+- [买卖股票的最佳时机-力扣121](src/java/leetcode/editor/cn/BestTimeToBuyAndSellStock121.java)(双指针)
+- [买卖股票的最佳时机2-力扣122](src/java/leetcode/editor/cn/BestTimeToBuyAndSellStockIi122.java)(双指针)
 
 #### 回溯算法
 - [全排列1-力扣46](src/java/leetcode/editor/cn/Permutations46.java)
