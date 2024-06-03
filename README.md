@@ -96,13 +96,15 @@ public List<Integer> preOrder(TreeNode root) {
 
 2. 打家劫舍问题
 - [打家劫舍](src/java/leetcode/editor/cn/HouseRobber198.java)
-- [打家劫舍2](src/java/leetcode/editor/cn/HouseRobber198.java)
+- [打家劫舍2](src/java/leetcode/editor/cn/HouseRobberIi213.java)
 - [打家劫舍3](src/java/leetcode/editor/cn/HouseRobberIii337.java)
 
 
-3. 股票问题
-- [买卖股票的最佳时机-力扣121](src/java/leetcode/editor/cn/BestTimeToBuyAndSellStock121.java)(双指针)
-- [买卖股票的最佳时机2-力扣122](src/java/leetcode/editor/cn/BestTimeToBuyAndSellStockIi122.java)(双指针)
+3. 股票买卖问题
+- [买卖股票的最佳时机-力扣121](src/java/leetcode/editor/cn/BestTimeToBuyAndSellStock121.java)(双指针+贪心思想)
+- [买卖股票的最佳时机2-力扣122](src/java/leetcode/editor/cn/BestTimeToBuyAndSellStockIi122.java)(双指针+贪心思想)
+- [买卖股票的最佳时机含手续费-力扣714](src/java/leetcode/editor/cn/BestTimeToBuyAndSellStockWithTransactionFee714.java)(动态规划)
+- [买卖股票得最佳时期含冷冻期-力扣309](src/java/leetcode/editor/cn/BestTimeToBuyAndSellStockWithCooldown309.java)(动态规划，和第714题一起看)
 
 #### 回溯算法
 - [全排列1-力扣46](src/java/leetcode/editor/cn/Permutations46.java)
@@ -123,3 +125,6 @@ public List<Integer> preOrder(TreeNode root) {
 
 #### 单调栈
 - [滑动窗口最大值-力扣239](src/java/leetcode/editor/cn/SlidingWindowMaximum239.java)
+
+#### 二叉树
+- [二叉树的所有路径-力扣257](src/java/leetcode/editor/cn/BinaryTreePaths257.java)
