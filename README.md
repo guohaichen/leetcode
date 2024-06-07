@@ -90,6 +90,8 @@ public List<Integer> preOrder(TreeNode root) {
 
 #### 动态规划
 - [不同路径](src/java/leetcode/editor/cn/UniquePaths62.java)
+- [使用最小花费爬楼梯-力扣746](src/java/leetcode/editor/cn/MinCostClimbingStairs746.java)
+
 1. 零钱兑换问题
 - [零钱兑换](src/java/leetcode/editor/cn/CoinChange322.java)
 - [零钱兑换2](src/java/leetcode/editor/cn/CoinChangeIi518.java)
@@ -122,9 +124,23 @@ public List<Integer> preOrder(TreeNode root) {
 #### 双指针
 - [两数之和](src/java/leetcode/editor/cn/TwoSumIiInputArrayIsSorted167.java)
 - [三数之和](src/java/leetcode/editor/cn/ThreeSum15.java)
+- [移动零-力扣283](src/java/leetcode/editor/cn/MoveZeroes283.java)
 
 #### 单调栈
 - [滑动窗口最大值-力扣239](src/java/leetcode/editor/cn/SlidingWindowMaximum239.java)
 
 #### 二叉树
 - [二叉树的所有路径-力扣257](src/java/leetcode/editor/cn/BinaryTreePaths257.java)
+- [二叉树的最大深度-力扣104](src/java/leetcode/editor/cn/MaximumDepthOfBinaryTree104.java)
+
+#### 二叉搜索树
+- [删除二叉搜索树中的节点-力扣450](src/java/leetcode/editor/cn/DeleteNodeInABst450.java)
+
+
+#### 字符串
+- [最长公共前缀-力扣14](src/java/leetcode/editor/cn/LongestCommonPrefix14.java)
+
+
+#### 链表
+- [反转链表1-力扣206](src/java/leetcode/editor/cn/ReverseLinkedList206.java)
+- [反转链表2-力扣92](src/java/leetcode/editor/cn/ReverseLinkedListIi92.java)
