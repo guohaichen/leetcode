@@ -128,6 +128,7 @@ public List<Integer> preOrder(TreeNode root) {
 
 #### 单调栈
 - [滑动窗口最大值-力扣239](src/java/leetcode/editor/cn/SlidingWindowMaximum239.java)
+- [接雨水-力扣42](src/java/leetcode/editor/cn/TrappingRainWater42.java)
 
 #### 二叉树
 - [二叉树的所有路径-力扣257](src/java/leetcode/editor/cn/BinaryTreePaths257.java)
