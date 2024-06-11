@@ -147,3 +147,4 @@ public List<Integer> preOrder(TreeNode root) {
 #### 链表
 - [反转链表1-力扣206](src/java/leetcode/editor/cn/ReverseLinkedList206.java)
 - [反转链表2-力扣92](src/java/leetcode/editor/cn/ReverseLinkedListIi92.java)
+- [两两交换链表中的节点](src/java/leetcode/editor/cn/SwapNodesInPairs24.java)
