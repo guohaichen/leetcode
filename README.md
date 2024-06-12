@@ -138,6 +138,7 @@ public List<Integer> preOrder(TreeNode root) {
 
 #### 二叉搜索树
 - [删除二叉搜索树中的节点-力扣450](src/java/leetcode/editor/cn/DeleteNodeInABst450.java)
+- [二叉搜索树中的插入操作](src/java/leetcode/editor/cn/InsertIntoABinarySearchTree701.java)
 
 
 #### 字符串
