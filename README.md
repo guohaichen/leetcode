@@ -90,6 +90,7 @@ public List<Integer> preOrder(TreeNode root) {
 
 #### 动态规划
 - [不同路径](src/java/leetcode/editor/cn/UniquePaths62.java)
+- [爬楼梯-力扣70](src/java/leetcode/editor/cn/ClimbingStairs70.java)
 - [使用最小花费爬楼梯-力扣746](src/java/leetcode/editor/cn/MinCostClimbingStairs746.java)
 - [**杨辉三角形ii-力扣119**](src/java/leetcode/editor/cn/PascalsTriangleIi119.java)
 
