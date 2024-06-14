@@ -150,3 +150,5 @@ public List<Integer> preOrder(TreeNode root) {
 - [反转链表1-力扣206](src/java/leetcode/editor/cn/ReverseLinkedList206.java)
 - [反转链表2-力扣92](src/java/leetcode/editor/cn/ReverseLinkedListIi92.java)
 - [两两交换链表中的节点](src/java/leetcode/editor/cn/SwapNodesInPairs24.java)
+- **[回文链表-力扣234](src/java/leetcode/editor/cn/PalindromeLinkedList234.java)**
+- [相交链表-力扣160](src/java/leetcode/editor/cn/IntersectionOfTwoLinkedLists160.java)
