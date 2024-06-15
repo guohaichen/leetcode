@@ -1,5 +1,8 @@
 import struct.ListNode;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * 给定一个链表的头节点 head ，返回链表开始入环的第一个节点。 如果链表无环，则返回 null。
  * <p>
@@ -77,25 +80,39 @@ public class LinkedListCycleIi142 {
      * }
      */
     public class Solution {
+        //        public ListNode detectCycle(ListNode head) {
+//            ListNode fastNode = head;
+//            ListNode slowNode = head;
+//            /**
+//             *  快指针走两步，慢指针走一步，总会相遇，
+//             */
+//            while (fastNode != null && fastNode.next != null) {
+//                slowNode = slowNode.next;
+//                fastNode = fastNode.next.next;
+//                //有环
+//                if (fastNode == slowNode) {
+//                    slowNode = head;
+//                    while (fastNode != slowNode) {
+//                        fastNode = fastNode.next;
+//                        slowNode = slowNode.next;
+//                    }
+//                    return fastNode;
+//                }
+//            }
+//            return null;
+//        }
         public ListNode detectCycle(ListNode head) {
-            ListNode fastNode = head;
-            ListNode slowNode = head;
-            /**
-             *  快指针走两步，慢指针走一步，总会相遇，
-             */
-            while (fastNode != null && fastNode.next != null) {
-                slowNode = slowNode.next;
-                fastNode = fastNode.next.next;
-                //有环
-                if (fastNode == slowNode) {
-                    slowNode = head;
-                    while (fastNode != slowNode) {
-                        fastNode = fastNode.next;
-                        slowNode = slowNode.next;
-                    }
-                    return fastNode;
+            //用哈希表同样可以解决，遍历整个链表，依次放入哈希表，如果表中存在，返回该节点，如果能放完，则无环，返回null;
+            Map<ListNode, ListNode> map = new HashMap<>();
+            while (head != null) {
+                if (map.containsKey(head)) {
+                    return head;
+                } else {
+                    map.put(head, head);
                 }
+                head = head.next;
             }
+            //如果没有提前返回head，则说明无环，返回null
             return null;
         }
     }
