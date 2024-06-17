@@ -55,15 +55,16 @@ public class RemoveDuplicatesFromSortedListIi82 {
              */
             ListNode pre = new ListNode(200);
             pre.next = head;
-            while (pre.next != null && pre.next.next != null) {
-                if (pre.next.val == pre.next.next.val) {
+            ListNode temp = pre;
+            while (temp.next != null && temp.next.next != null) {
+                if (temp.next.val == temp.next.next.val) {
 
-                    int x = pre.next.val;
-                    while (pre.next!=null && pre.next.val==x){
-                        pre.next = pre.next.next;
+                    int x = temp.next.val;
+                    while (temp.next!=null && temp.next.val==x){
+                        temp.next = temp.next.next;
                     }
                 }else {
-                    pre = pre.next;
+                    temp = temp.next;
                 }
             }
             return pre.next;
