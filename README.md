@@ -156,3 +156,5 @@ public List<Integer> preOrder(TreeNode root) {
 - [两两交换链表中的节点](src/java/leetcode/editor/cn/SwapNodesInPairs24.java)
 - **[回文链表-力扣234](src/java/leetcode/editor/cn/PalindromeLinkedList234.java)**
 - [相交链表-力扣160](src/java/leetcode/editor/cn/IntersectionOfTwoLinkedLists160.java)
+- [删除排序链表中的重复元素-力扣83](src/java/leetcode/editor/cn/RemoveDuplicatesFromSortedList83.java)
+- [删除排序链表中的重复元素ii-力扣82](src/java/leetcode/editor/cn/RemoveDuplicatesFromSortedListIi82.java)
