@@ -139,6 +139,8 @@ public List<Integer> preOrder(TreeNode root) {
 - [二叉树的最大深度-力扣104](src/java/leetcode/editor/cn/MaximumDepthOfBinaryTree104.java)
 - [平衡二叉树-力扣110](src/java/leetcode/editor/cn/BalancedBinaryTree110.java)
 - [二叉树的最近公共祖先](src/java/leetcode/editor/cn/LowestCommonAncestorOfABinaryTree236.java)
+- [从前序与中序遍历序列构造二叉树-力扣105](src/java/leetcode/editor/cn/ConstructBinaryTreeFromPreorderAndInorderTraversal105.java)
+- [从中序与后序遍历构造二叉树-力扣106](src/java/leetcode/editor/cn/ConstructBinaryTreeFromInorderAndPostorderTraversal106.java)
 
 #### 二叉搜索树
 - [删除二叉搜索树中的节点-力扣450](src/java/leetcode/editor/cn/DeleteNodeInABst450.java)
