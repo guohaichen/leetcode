@@ -137,6 +137,7 @@ public List<Integer> preOrder(TreeNode root) {
 #### 二叉树
 - [二叉树的所有路径-力扣257](src/java/leetcode/editor/cn/BinaryTreePaths257.java)
 - [二叉树的最大深度-力扣104](src/java/leetcode/editor/cn/MaximumDepthOfBinaryTree104.java)
+- **[二叉树的直径-力扣543](src/java/leetcode/editor/cn/DiameterOfBinaryTree543.java)**
 - [平衡二叉树-力扣110](src/java/leetcode/editor/cn/BalancedBinaryTree110.java)
 - [二叉树的最近公共祖先](src/java/leetcode/editor/cn/LowestCommonAncestorOfABinaryTree236.java)
 - [从前序与中序遍历序列构造二叉树-力扣105](src/java/leetcode/editor/cn/ConstructBinaryTreeFromPreorderAndInorderTraversal105.java)
@@ -149,6 +150,7 @@ public List<Integer> preOrder(TreeNode root) {
 - [二叉搜索树中的插入操作](src/java/leetcode/editor/cn/InsertIntoABinarySearchTree701.java)
 - [二叉搜索树中的众数](src/java/leetcode/editor/cn/FindModeInBinarySearchTree501.java)
 - [二叉搜索树的最近公共祖先](src/java/leetcode/editor/cn/ErChaSouSuoShuDeZuiJinGongGongZuXianLcofLCR 193.java)
+- [将有序链表转换为二叉搜索树-力扣108](src/java/leetcode/editor/cn/ConvertSortedArrayToBinarySearchTree108.java)
 
 #### 字符串
 - [最长公共前缀-力扣14](src/java/leetcode/editor/cn/LongestCommonPrefix14.java)
