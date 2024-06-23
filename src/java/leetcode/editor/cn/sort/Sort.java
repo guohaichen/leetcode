@@ -14,6 +14,7 @@ public class Sort {
 //        bubbling(array);
 //        pick(array);
         insert(array);
+        System.out.println(binarySearch(array, 10));
     }
 
     //冒泡 在于两两比较,
@@ -57,10 +58,30 @@ public class Sort {
                     int tmp = array[j - 1];
                     array[j - 1] = array[j];
                     array[j] = tmp;
-                    System.out.printf("%d 交换 %d\n",array[j],array[j-1]);
+                    System.out.printf("%d 交换 %d\n", array[j], array[j - 1]);
                 }
             }
         }
         System.out.println(Arrays.toString(array));
     }
+
+    /*
+    二分查找的基础是在已排序的数组中折中对半查找
+     */
+    public static int binarySearch(int[] array, int num) {
+        int right = array.length - 1;
+        int left = 0;
+        while (left <= right) {
+            int middle = (left + right) / 2;
+            if (num == array[middle]) {
+                return middle;
+            } else if (num < array[middle]) {
+                right = middle - 1;
+            } else if (num > array[middle]) {
+                left = middle + 1;
+            }
+        }
+        return -1;
+    }
+
 }
