@@ -94,7 +94,8 @@ public List<Integer> preOrder(TreeNode root) {
 - [使用最小花费爬楼梯-力扣746](src/java/leetcode/editor/cn/MinCostClimbingStairs746.java)
 - [杨辉三角形i-力扣118](src/java/leetcode/editor/cn/PascalsTriangle118.java)
 - [**杨辉三角形ii-力扣119**](src/java/leetcode/editor/cn/PascalsTriangleIi119.java)
-
+- **[最长递增子序列-力扣300](src/java/leetcode/editor/cn/LongestIncreasingSubsequence300.java)**
+- [不同的二叉搜索树-力扣96(卡特兰数)](src/java/leetcode/editor/cn/UniqueBinarySearchTrees96.java)
 
 1. 零钱兑换问题
 - [零钱兑换](src/java/leetcode/editor/cn/CoinChange322.java)
