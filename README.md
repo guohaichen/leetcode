@@ -126,6 +126,10 @@ public List<Integer> preOrder(TreeNode root) {
 
 ![八皇后](./assets/image-20240528170047229.png)
 
+#### 贪心算法
+-[柠檬水找零-力扣860](src/java/leetcode/editor/cn/LemonadeChange860.java)
+
+
 #### 双指针
 - [两数之和](src/java/leetcode/editor/cn/TwoSumIiInputArrayIsSorted167.java)
 - [三数之和](src/java/leetcode/editor/cn/ThreeSum15.java)
