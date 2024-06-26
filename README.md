@@ -159,7 +159,8 @@ public List<Integer> preOrder(TreeNode root) {
 
 #### 字符串
 - [最长公共前缀-力扣14](src/java/leetcode/editor/cn/LongestCommonPrefix14.java)
-
+- [找出字符串第一个匹配项的下标-力扣28](src/java/leetcode/editor/cn/FindTheIndexOfTheFirstOccurrenceInAString28.java)
+- [最长回文子串-力扣5](src/java/leetcode/editor/cn/LongestPalindromicSubstring5.java)
 
 #### 链表
 - [反转链表1-力扣206](src/java/leetcode/editor/cn/ReverseLinkedList206.java)
