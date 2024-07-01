@@ -121,6 +121,7 @@ public List<Integer> preOrder(TreeNode root) {
 - [组合总和2-力扣40](src/java/leetcode/editor/cn/CombinationSumIi40.java)
 - [组合总和3-力扣216](src/java/leetcode/editor/cn/CombinationSumIii216.java)
 - [八皇后-力扣51](src/java/leetcode/editor/cn/NQueens51.java)
+- [括号生成-力扣22](src/java/leetcode/editor/cn/GenerateParentheses22.java)
 
 八皇后问题图解：
 
