@@ -97,9 +97,11 @@ public List<Integer> preOrder(TreeNode root) {
 - **[最长递增子序列-力扣300](src/java/leetcode/editor/cn/LongestIncreasingSubsequence300.java)**
 - [不同的二叉搜索树-力扣96(卡特兰数)](src/java/leetcode/editor/cn/UniqueBinarySearchTrees96.java)
 - [最小路径和-力扣64](src/java/leetcode/editor/cn/MinimumPathSum64.java)
-1. 零钱兑换问题
+1. 零钱兑换问题(背包问题)
 - [零钱兑换](src/java/leetcode/editor/cn/CoinChange322.java)
 - [零钱兑换2](src/java/leetcode/editor/cn/CoinChangeIi518.java)
+- [单词拆分](src/java/leetcode/editor/cn/WordBreak139.java)
+
 
 2. 打家劫舍问题
 - [打家劫舍](src/java/leetcode/editor/cn/HouseRobber198.java)
@@ -112,6 +114,7 @@ public List<Integer> preOrder(TreeNode root) {
 - [买卖股票的最佳时机2-力扣122](src/java/leetcode/editor/cn/BestTimeToBuyAndSellStockIi122.java)(双指针+贪心思想)
 - [买卖股票的最佳时机含手续费-力扣714](src/java/leetcode/editor/cn/BestTimeToBuyAndSellStockWithTransactionFee714.java)(动态规划)
 - [买卖股票得最佳时期含冷冻期-力扣309](src/java/leetcode/editor/cn/BestTimeToBuyAndSellStockWithCooldown309.java)(动态规划，和第714题一起看)
+
 
 #### 回溯算法
 - [全排列1-力扣46](src/java/leetcode/editor/cn/Permutations46.java)
