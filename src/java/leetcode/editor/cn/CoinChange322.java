@@ -50,40 +50,24 @@ public class CoinChange322 {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int coinChange(int[] coins, int amount) {
-            /*完全背包问题，每种硬币的数量是无限的 dp[硬币数量][背包重量]，dp[i][j]= 物品的价值，而这里求的是 最少的硬币个数;
-            这里可以将物品的价值统一为1，那么它也就是物品的个数，装得下：min(当前个数+1)
-             */
-            if (amount == 0) {
-                return 0;
-            }
-            int[][] dp = new int[coins.length][amount + 1];
 
-            for (int j = 1; j <= amount; j++) {
-                int coin0 = coins[0];
-                if (coin0 <= j) {
-                    dp[0][j] = (dp[0][j - coin0] + 1);
-                } else {
-                    //特殊，凑不到的总额 因为存放的是硬币的个数，不可能超过amount+1，总额是amount
-                    dp[0][j] = amount + 1;
-                }
-            }
+            int[] dp = new int[amount + 1];
 
-
-            for (int i = 1; i < coins.length; i++) {
-                int coin = coins[i];
-                //总量
-                for (int j = 1; j <= amount; j++) {
-                    //装得下，硬币数量+1
-                    if (coin <= j) {
-                        //上次的硬币少 还是这次的硬币少
-                        dp[i][j] = Integer.min(dp[i - 1][j], 1 + dp[i][j - coin]);
-                    } else {
-                        dp[i][j] = dp[i - 1][j];
+            Arrays.fill(dp, amount + 1);
+            //凑0 最少就是0个硬币
+            dp[0] = 0;
+            //背包容量
+            for (int i = 1; i <= amount; i++) {
+                for (int coin : coins) {
+                    //装得下，判断哪种方法数量更少，i-coin为背包剩余容量能装下物品的最小组合，+1 因为当前物品也装下了
+                    // dp[i - coin] != amount + 1 排除剩余容量 装不下的情况
+                    if (i >= coin && dp[i - coin] != amount + 1) {
+                        dp[i] = Integer.min(dp[i], dp[i - coin] + 1);
                     }
                 }
             }
-            int max = dp[coins.length - 1][amount];
-            return (max > amount) ? -1 : dp[coins.length - 1][amount];
+            return dp[amount] == amount + 1 ? -1 : dp[amount];
+
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
@@ -112,5 +96,42 @@ public class CoinChange322 {
         } else {
             return dp[amount];
         }
+    }
+
+    public int coinChange3(int[] coins, int amount) {
+            /*完全背包问题，每种硬币的数量是无限的 dp[硬币数量][背包重量]，dp[i][j]= 物品的价值，而这里求的是 最少的硬币个数;
+            这里可以将物品的价值统一为1，那么它也就是物品的个数，装得下：min(当前个数+1)
+             */
+        if (amount == 0) {
+            return 0;
+        }
+        int[][] dp = new int[coins.length][amount + 1];
+
+        for (int j = 1; j <= amount; j++) {
+            int coin0 = coins[0];
+            if (coin0 <= j) {
+                dp[0][j] = (dp[0][j - coin0] + 1);
+            } else {
+                //特殊，凑不到的总额 因为存放的是硬币的个数，不可能超过amount+1，总额是amount
+                dp[0][j] = amount + 1;
+            }
+        }
+
+
+        for (int i = 1; i < coins.length; i++) {
+            int coin = coins[i];
+            //总量
+            for (int j = 1; j <= amount; j++) {
+                //装得下，硬币数量+1
+                if (coin <= j) {
+                    //上次的硬币少 还是这次的硬币少
+                    dp[i][j] = Integer.min(dp[i - 1][j], 1 + dp[i][j - coin]);
+                } else {
+                    dp[i][j] = dp[i - 1][j];
+                }
+            }
+        }
+        int max = dp[coins.length - 1][amount];
+        return (max > amount) ? -1 : dp[coins.length - 1][amount];
     }
 }
