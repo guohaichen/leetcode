@@ -101,7 +101,7 @@ public List<Integer> preOrder(TreeNode root) {
 - [零钱兑换](src/java/leetcode/editor/cn/CoinChange322.java)
 - [零钱兑换2](src/java/leetcode/editor/cn/CoinChangeIi518.java)
 - [单词拆分](src/java/leetcode/editor/cn/WordBreak139.java)
-
+- [最大子数组和-力扣53](src/java/leetcode/editor/cn/MaximumSubarray53.java)
 
 2. 打家劫舍问题
 - [打家劫舍](src/java/leetcode/editor/cn/HouseRobber198.java)
@@ -138,6 +138,7 @@ public List<Integer> preOrder(TreeNode root) {
 - [两数之和](src/java/leetcode/editor/cn/TwoSumIiInputArrayIsSorted167.java)
 - [三数之和](src/java/leetcode/editor/cn/ThreeSum15.java)
 - [移动零-力扣283](src/java/leetcode/editor/cn/MoveZeroes283.java)
+- [盛最多的水容器-力扣11](src/java/leetcode/editor/cn/ContainerWithMostWater11.java)
 
 #### 单调栈
 - [滑动窗口最大值-力扣239](src/java/leetcode/editor/cn/SlidingWindowMaximum239.java)
@@ -183,3 +184,4 @@ public List<Integer> preOrder(TreeNode root) {
 
 #### 力扣hot100
 - [电话号码的字母组合-力扣17](src/java/leetcode/editor/cn/LetterCombinationsOfAPhoneNumber17.java)
+- [最长连续序列-力扣128](src/java/leetcode/editor/cn/LongestConsecutiveSequence128.java)
