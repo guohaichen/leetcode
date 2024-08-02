@@ -125,6 +125,7 @@ public List<Integer> preOrder(TreeNode root) {
 - [组合总和3-力扣216](src/java/leetcode/editor/cn/CombinationSumIii216.java)
 - [八皇后-力扣51](src/java/leetcode/editor/cn/NQueens51.java)
 - [括号生成-力扣22](src/java/leetcode/editor/cn/GenerateParentheses22.java)
+- [子集-力扣78](src/java/leetcode/editor/cn/Subsets78.java)
 
 八皇后问题图解：
 
@@ -153,7 +154,7 @@ public List<Integer> preOrder(TreeNode root) {
 - [从前序与中序遍历序列构造二叉树-力扣105](src/java/leetcode/editor/cn/ConstructBinaryTreeFromPreorderAndInorderTraversal105.java)
 - [从中序与后序遍历构造二叉树-力扣106](src/java/leetcode/editor/cn/ConstructBinaryTreeFromInorderAndPostorderTraversal106.java)
 - [二叉树展开为链表-力扣114](src/java/leetcode/editor/cn/FlattenBinaryTreeToLinkedList114.java)
-
+- [二叉树中的最大路径和](src/java/leetcode/editor/cn/BinaryTreeMaximumPathSum124.java)
 
 #### 二叉搜索树
 - [删除二叉搜索树中的节点-力扣450](src/java/leetcode/editor/cn/DeleteNodeInABst450.java)
