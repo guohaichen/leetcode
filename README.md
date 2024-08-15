@@ -102,6 +102,8 @@ public List<Integer> preOrder(TreeNode root) {
 - [零钱兑换2](src/java/leetcode/editor/cn/CoinChangeIi518.java)
 - [单词拆分](src/java/leetcode/editor/cn/WordBreak139.java)
 - [最大子数组和-力扣53](src/java/leetcode/editor/cn/MaximumSubarray53.java)
+- [最长公共子序列-力扣1143](src/java/leetcode/editor/cn/LongestCommonSubsequence1143.java)
+- [最长重复子数组-力扣718](src/java/leetcode/editor/cn/MaximumLengthOfRepeatedSubarray718.java)
 
 2. 打家劫舍问题
 - [打家劫舍](src/java/leetcode/editor/cn/HouseRobber198.java)
