@@ -34,6 +34,7 @@ import java.util.Arrays;
 public class MaximumLengthOfRepeatedSubarray718 {
     public static void main(String[] args) {
         Solution solution = new MaximumLengthOfRepeatedSubarray718().new Solution();
+        solution.findLength(new int[]{1, 2, 3, 2, 1}, new int[]{3, 2, 1, 1, 4, 7});
     }
 
     /*
@@ -41,9 +42,9 @@ public class MaximumLengthOfRepeatedSubarray718 {
         3   0   0   1   0   0
         2   0   1   0   2   0
         1   1   0   0   0   3
-        1   1   0   0   0   0
-        4
-        7
+        1   1   0   0   0   1
+        4   0   0   0   0   0
+        7   0   0   0   0   0
      */
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
@@ -71,7 +72,7 @@ public class MaximumLengthOfRepeatedSubarray718 {
 //        }
         public int findLength(int[] nums1, int[] nums2) {
             //降维
-            int[] dp = new int[nums1.length];
+            int[] dp = new int[nums2.length];
             int max = 0;
             for (int i = 0; i < nums1.length; i++) {
                 //j的索引要从大到小，因为它的对应值需要用到 i-1行的 小索引，不能使用当前i的索引。
@@ -88,6 +89,7 @@ public class MaximumLengthOfRepeatedSubarray718 {
                         dp[j] = 0;
                     }
                 }
+//                System.out.println("--" + Arrays.toString(dp));
             }
             return max;
         }

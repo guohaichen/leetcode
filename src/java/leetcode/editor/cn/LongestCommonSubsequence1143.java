@@ -51,6 +51,7 @@ import java.util.Arrays;
 public class LongestCommonSubsequence1143 {
     public static void main(String[] args) {
         Solution solution = new LongestCommonSubsequence1143().new Solution();
+        solution.longestCommonSubsequence("ezupkr", "ubmrapg");
     }
 
     /*
@@ -66,22 +67,46 @@ public class LongestCommonSubsequence1143 {
      */
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
+        //        public int longestCommonSubsequence(String text1, String text2) {
+//            int m = text1.length();
+//            int n = text2.length();
+//            int[][] dp = new int[m + 1][n + 1];
+//            for (int i = 1; i <= m; i++) {
+//                char s1 = text1.charAt(i - 1);
+//                for (int j = 1; j <= n; j++) {
+//                    //相等
+//                    if (s1 == text2.charAt(j - 1)) {
+//                        dp[i][j] = dp[i - 1][j - 1] + 1;
+//                    } else {
+//                        dp[i][j] = Integer.max(dp[i - 1][j], dp[i][j - 1]);
+//                    }
+//                }
+//            }
+//            return dp[m][n];
+//        }
+        //降维
         public int longestCommonSubsequence(String text1, String text2) {
             int m = text1.length();
             int n = text2.length();
-            int[][] dp = new int[m + 1][n + 1];
+
+            int[] dp = new int[n + 1];
+
             for (int i = 1; i <= m; i++) {
-                char s1 = text1.charAt(i - 1);
+                //初始时，dp[0]为 0;
+                int prev = 0;
                 for (int j = 1; j <= n; j++) {
+                    int cur = dp[j];
                     //相等
-                    if (s1 == text2.charAt(j - 1)) {
-                        dp[i][j] = dp[i - 1][j - 1] + 1;
+                    if (text1.charAt(i - 1) == text2.charAt(j - 1)) {
+                        // perv为上一轮的dp[j]
+                        dp[j] = prev + 1;
                     } else {
-                        dp[i][j] = Integer.max(dp[i - 1][j], dp[i][j - 1]);
+                        dp[j] = Math.max(dp[j - 1], dp[j]);
                     }
+                    prev = cur;
                 }
             }
-            return dp[m][n];
+            return dp[n];
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
