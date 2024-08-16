@@ -105,6 +105,8 @@ public List<Integer> preOrder(TreeNode root) {
 下面两个题，注意dp降维后的区别；
 - [最长公共子序列-力扣1143](src/java/leetcode/editor/cn/LongestCommonSubsequence1143.java)
 - [最长重复子数组-力扣718](src/java/leetcode/editor/cn/MaximumLengthOfRepeatedSubarray718.java)
+- [编辑距离-力扣72](src/java/leetcode/editor/cn/EditDistance72.java)
+- [两个字符串的删除操作-力扣583](src/java/leetcode/editor/cn/DeleteOperationForTwoStrings583.java)
 
 2. 打家劫舍问题
 - [打家劫舍](src/java/leetcode/editor/cn/HouseRobber198.java)
