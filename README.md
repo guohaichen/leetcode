@@ -138,6 +138,7 @@ public List<Integer> preOrder(TreeNode root) {
 
 #### 贪心算法
 -[柠檬水找零-力扣860](src/java/leetcode/editor/cn/LemonadeChange860.java)
+-[加油站-力扣134-全局最优](src/java/leetcode/editor/cn/GasStation134.java)
 
 
 #### 双指针
