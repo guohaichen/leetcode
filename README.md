@@ -150,6 +150,8 @@ public List<Integer> preOrder(TreeNode root) {
 #### 滑动窗口
 - [乘积小于k的子数组-713](src/java/leetcode/editor/cn/SubarrayProductLessThanK713.java)
 - [长度最小的子数组-209](src/java/leetcode/editor/cn/MinimumSizeSubarraySum209.java)
+- [无重复字符的最长子串-3](src/java/leetcode/editor/cn/LongestSubstringWithoutRepeatingCharacters3.java)
+- [在排序数组中查找元素的第一个和最后一个位置-34](src/java/leetcode/editor/cn/FindFirstAndLastPositionOfElementInSortedArray34.java)
 
 #### 单调栈
 - [滑动窗口最大值-力扣239](src/java/leetcode/editor/cn/SlidingWindowMaximum239.java)
