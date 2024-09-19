@@ -137,8 +137,8 @@ public List<Integer> preOrder(TreeNode root) {
 ![八皇后](./assets/image-20240528170047229.png)
 
 #### 贪心算法
--[柠檬水找零-力扣860](src/java/leetcode/editor/cn/LemonadeChange860.java)
--[加油站-力扣134-全局最优](src/java/leetcode/editor/cn/GasStation134.java)
+- [柠檬水找零-力扣860](src/java/leetcode/editor/cn/LemonadeChange860.java)
+- [加油站-力扣134-全局最优](src/java/leetcode/editor/cn/GasStation134.java)
 
 
 #### 双指针
@@ -146,6 +146,10 @@ public List<Integer> preOrder(TreeNode root) {
 - [三数之和](src/java/leetcode/editor/cn/ThreeSum15.java)
 - [移动零-力扣283](src/java/leetcode/editor/cn/MoveZeroes283.java)
 - [盛最多的水容器-力扣11](src/java/leetcode/editor/cn/ContainerWithMostWater11.java)
+
+#### 滑动窗口
+- [乘积小于k的子数组-713](src/java/leetcode/editor/cn/SubarrayProductLessThanK713.java)
+- [长度最小的子数组-209](src/java/leetcode/editor/cn/MinimumSizeSubarraySum209.java)
 
 #### 单调栈
 - [滑动窗口最大值-力扣239](src/java/leetcode/editor/cn/SlidingWindowMaximum239.java)
