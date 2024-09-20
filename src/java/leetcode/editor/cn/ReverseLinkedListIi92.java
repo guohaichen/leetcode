@@ -49,7 +49,7 @@ public class ReverseLinkedListIi92 {
         node2.setNext(node3);
         node3.setNext(node4);
         node4.setNext(node5);
-        solution.reverseBetween(head,2,4);
+        solution.reverseBetween(head, 2, 4);
     }
     //leetcode submit region begin(Prohibit modification and deletion)
 
@@ -85,17 +85,47 @@ public class ReverseLinkedListIi92 {
             //反转left到right,采用原地反转，next插入到头部， 依次将 start.next 插入到头部，
             // 1->2->3->4->5   1->3->2->4->5    1->4->3->2->5
             for (int i = 0; i < right - left; i++) {
-               //2->4               //第二轮 2->5
-               start.next = then.next;
-               //3->2               //第二轮 4->3
-               then.next = prev.next;
-               //1->3               //第二轮 1->4
-               prev.next = then;
-               //then=4             //第二轮 then=5
-               then = start.next;
+                //2->4               //第二轮 2->5
+                start.next = then.next;
+                //3->2               //第二轮 4->3
+                then.next = prev.next;
+                //1->3               //第二轮 1->4
+                prev.next = then;
+                //then=4             //第二轮 then=5
+                then = start.next;
             }
             return dummy.next;
 
+        }
+
+    }
+
+    class Solution2 {
+        /*
+        方法二：
+         */
+        public ListNode reverseBetween(ListNode head, int left, int right) {
+            ListNode temp = new ListNode(-1);
+            temp.next = head;
+            ListNode start = temp;
+            //找到需要反转中间部分的前驱节点，当前的start,
+            for (int i = 0; i < left - 1; i++) {
+                start = start.next;
+            }
+
+            //翻转中间部分,算法同反转链表
+            ListNode pre = null;
+            ListNode cur = start.next;
+            for (int i = 0; i < right - left+1; i++) {
+                ListNode tmp = cur.next;
+                cur.next = pre;
+                pre = cur;
+                cur = tmp;
+            }
+            //翻转完成后，pre 即翻转后的头，cur即为right.next
+            start.next.next = cur;
+            start.next = pre;
+            return temp.next;
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
