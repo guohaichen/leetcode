@@ -1,93 +1,3 @@
-### 收获
-#### leetcode150  逆波兰表示法;
-> 也称后缀表达式，我们通常运算时，是将运算符号放在中间。而逆波兰实际就是将运算符放在后面。例如中缀为 5 + 3，后缀则为5 3 +；
-> 输入：tokens = ["10","6","9","3","+","-11","*","/","*","17","+","5","+"]
-> 输出：22
-> 解释：该算式转化为常见的中缀算术表达式为：
-> ((10 * (6 / ((9 + 3) * -11))) + 17) + 5 
-> = ((10 * (6 / (12 * -11))) + 17) + 5 
-> = ((10 * (6 / -132)) + 17) + 5 = ((10 * 0) + 17) + 5 
-> = (0 + 17) + 5
-> = 17 + 5
-> = 22
->
-> 而计算机中，是采用逆波兰表示法，例如一个java 类，它如果包含运算表达式 c = a + b，那么它在经过编译后实际上就被转成了后缀表达式。这点可以通过 `javap -c -v` 反编译测试。
->
-> 字节码大概指令如下：
->
-> iload_0
->
-> iload_1
->
-> iadd
->
-> istore_2
-
-#### 二叉树的一些遍历方式
-1. 层序遍历 也就是广度优先遍历 结合队列
-
-```java
-public List<List<Integer>> levelQuery(TreeNode root) {
-        if (root == null) {
-            return new ArrayList<>();
-        }
-        //存放每层node
-        List<List<Integer>> levelList = new ArrayList<>();
-        //借助队列，先进先出
-        Queue<TreeNode> queue = new LinkedList<>();
-        queue.offer(root);
-        while (!queue.isEmpty()) {
-            //存放node
-            ArrayList<Integer> nodeList = new ArrayList<>();
-            int size = queue.size();
-            while (size > 0) {
-                BinaryTree.TreeNode tmpNode = queue.poll();
-                nodeList.add(tmpNode.val);
-                if (tmpNode.leftNode != null) {
-                    queue.offer(tmpNode.leftNode);
-                }
-                if (tmpNode.rightNode != null) {
-                    queue.offer(tmpNode.rightNode);
-                }
-                size--;
-            }
-            levelList.add(nodeList);
-        }
-        return levelList;
-    }
-```
-
-2. 前序遍历，中序遍历，后序遍历 也就是深度优先遍历 结合栈；
-
-```java
-import struct.TreeNode;
-
-import java.util.ArrayList;
-import java.util.LinkedList;
-
-public List<Integer> preOrder(TreeNode root) {
-    if (root == null) {
-        return null;
-    }
-    TreeNode current = root;
-    LinkedList<TreeNode> stack = new LinkedList<>();
-    List<Integer> list = new ArrayList<>();
-
-    while (!stack.isEmpty() || current != null) {
-        if (current != null) {
-            stack.push(current);
-            list.add(current.val);
-            current = current.left;
-        } else {
-            TreeNode pop = stack.pop();
-            current = pop.right;
-        }
-    }
-}
-```
-
-
-
 #### 动态规划
 - [不同路径](src/java/leetcode/editor/cn/UniquePaths62.java)
 - [爬楼梯-力扣70](src/java/leetcode/editor/cn/ClimbingStairs70.java)
@@ -158,6 +68,9 @@ public List<Integer> preOrder(TreeNode root) {
 - [接雨水-力扣42](src/java/leetcode/editor/cn/TrappingRainWater42.java)
 
 #### 二叉树
+- [前序遍历](src/java/leetcode/editor/cn/BinaryTreePreorderTraversal144.java)
+- [中序遍历](src/java/leetcode/editor/cn/BinaryTreeInorderTraversal94.java)
+- [后序遍历](src/java/leetcode/editor/cn/BinaryTreePostorderTraversal145.java)
 - [二叉树的所有路径-力扣257](src/java/leetcode/editor/cn/BinaryTreePaths257.java)
 - [二叉树的最大深度-力扣104](src/java/leetcode/editor/cn/MaximumDepthOfBinaryTree104.java)
 - **[二叉树的直径-力扣543](src/java/leetcode/editor/cn/DiameterOfBinaryTree543.java)**
@@ -174,7 +87,7 @@ public List<Integer> preOrder(TreeNode root) {
 - [删除二叉搜索树中的节点-力扣450](src/java/leetcode/editor/cn/DeleteNodeInABst450.java)
 - [二叉搜索树中的插入操作](src/java/leetcode/editor/cn/InsertIntoABinarySearchTree701.java)
 - [二叉搜索树中的众数](src/java/leetcode/editor/cn/FindModeInBinarySearchTree501.java)
-- [二叉搜索树的最近公共祖先](src/java/leetcode/editor/cn/ErChaSouSuoShuDeZuiJinGongGongZuXianLcofLCR 193.java)
+- [二叉搜索树的最近公共祖先](src/java/leetcode/editor/cn/LowestCommonAncestorOfABinarySearchTree235.java)
 - [将有序链表转换为二叉搜索树-力扣108](src/java/leetcode/editor/cn/ConvertSortedArrayToBinarySearchTree108.java)
 
 #### 字符串
